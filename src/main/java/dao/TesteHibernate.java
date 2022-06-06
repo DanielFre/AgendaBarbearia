@@ -5,7 +5,7 @@
  */
 package dao;
 
-import modelo.Usuario;
+
 import dao.JPAUtil;
 import javax.persistence.EntityManager;
 

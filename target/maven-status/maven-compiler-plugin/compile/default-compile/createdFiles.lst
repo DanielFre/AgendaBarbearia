@@ -1,5 +1,0 @@
-dao\UsuarioDAO.class
-model\Usuario.class
-model\Usuario_.class
-dao\TesteHibernate.class
-dao\JPAUtil.class

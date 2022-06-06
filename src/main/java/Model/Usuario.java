@@ -1,37 +1,38 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Model;
 
-import java.util.Date;
-
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  *
- * @author danie
+ * @author daniel.frey
  */
-public class Usuario extends Pessoa{
-    
+@Entity
+public class Usuario {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String usuario;
     private String senha;
-    private String nivelDeAcesso;
+    private String email;
 
-    public Usuario(int id, String nome, String senha ) {
-        super(id, nome);
+    public Usuario(int id, String usuario, String senha) {
+        this.id = id;
         this.senha = senha;
+        this.usuario = usuario;
     }
 
-    public Usuario(int id, String nome, String senha, String nivelDeAcesso) {
-        super(id, nome);
+    public Usuario(String usuario, String senha) {
         this.senha = senha;
-        this.nivelDeAcesso = nivelDeAcesso;
-    }
-
-    public Usuario( int id, String nome, char sexo, String dataNascimento, String telefone, String email, String rg, String senha, String nivelDeAcesso) {
-        super(id, nome, sexo, dataNascimento, telefone, email, rg);
-        this.senha = senha;
-        this.nivelDeAcesso = nivelDeAcesso;
+        this.usuario = usuario;
     }
 
     public String getSenha() {
@@ -42,13 +43,19 @@ public class Usuario extends Pessoa{
         this.senha = senha;
     }
 
-    public String getNivelDeAcesso() {
-        return nivelDeAcesso;
+    public int getId() {
+        return id;
     }
 
-    public void setNivelDeAcesso(String nivelDeAcesso) {
-        this.nivelDeAcesso = nivelDeAcesso;
-    } 
-   
-    
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
 }
