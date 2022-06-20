@@ -23,8 +23,8 @@ public class Main {
         Clientes cliente = new Clientes(1, "ClienteDaniel", "Av. Flores da Cunha, 701", "98789-122");
         System.out.println(cliente.getNome());
         
-        Usuario usuario = new Usuario(1, "Daniel", "123");
-        System.out.println(usuario.getNome());
+        Usuario usuario = new Usuario("Daniel", "123");
+//        System.out.println(usuario.getNome());
         
 
         Agendamento agendamento = new Agendamento(1, cliente, servico, 30, "25/05/2022 22:00");

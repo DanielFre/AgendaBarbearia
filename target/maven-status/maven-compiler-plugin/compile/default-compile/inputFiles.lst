@@ -1,5 +1,6 @@
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\Clientes.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Controller\Helper\LoginHelper.java
+C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\UsuarioDAO.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\Usuario.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\View\Loading.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\ClienteDAO.java
@@ -13,16 +14,13 @@ C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\View\MenuPri
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\dao\TesteHibernate.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Servico\Email.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Controller\Helper\IHelper.java
-C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\UsuarioDAOs.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\Banco.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\View\Main.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\ServicoDAO.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Controller\LoginController.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\DAO\AgendamentoDAO.java
-C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\modelo\UsuarioDAO.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Model\Pessoa.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Servico\Correio.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\Servico\EmailTeste.java
-C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\modelo\Usuario.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\dao\JPAUtil.java
 C:\Users\daniel.frey\Documents\GitHub\AgendaBarbearia\src\main\java\View\Agenda.java

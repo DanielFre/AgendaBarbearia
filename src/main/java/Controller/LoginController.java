@@ -9,6 +9,8 @@ import Model.DAO.UsuarioDAO;
 import Model.Usuario;
 import View.Login;
 import View.MenuPrincipal;
+import dao.JPAUtil;
+import javax.persistence.EntityManager;
 
 /**
  *
@@ -27,13 +29,21 @@ public class LoginController {
     public void entrarNoSistema() {
 
         // pegar o usuario da view
-        Usuario usuario = helper.obterModelo();
-
+//        Usuario usuario = helper.obterModelo();
         //pesquisar usuario no banco
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        Usuario usuarioAutenticado = usuarioDAO.selectPorNomeESenha(usuario);
+//        UsuarioDAO usuarioDAO = new UsuarioDAO(usuario);
+//        Usuario usuarioAutenticado = usuarioDAO.verificaSeExisteUsuarioEsenhaNoBanco(usuario);
+        EntityManager em = new JPAUtil().getEntityManager();
+        em.getTransaction().begin();
 
-        if (usuarioAutenticado != null) { // se tudo ok direciona para o menu principal
+        Usuario usuario = helper.obterModelo();
+        boolean usuarioAutenticado = new UsuarioDAO(em).verificaSeExisteUsuarioEsenhaNoBanco(usuario);
+        System.out.println("usuario e senha: " + usuario);
+        System.out.println("usuarioAutenticado: " + usuarioAutenticado);
+        em.getTransaction().commit();
+        em.close();
+
+        if (usuarioAutenticado) { // se tudo ok direciona para o menu principal
             MenuPrincipal menu = new MenuPrincipal();
             menu.setVisible(true);
             this.view.dispose();
